@@ -9,10 +9,15 @@ describe('getFullYear function', () => {
 });
 
 describe('getFooterCopy function', () => {
-  it('returns an HTML footer', () => {
+  it('returns "Holberton School" when it receives true as an argument', () => {
     const footerCopyIsTrue = 'Holberton School';
-    const footerCopyIsFalse = 'Holberton School main dashboard';
     expect(getFooterCopy(true)).toBe(footerCopyIsTrue);
+  })
+});
+
+describe('getFooterCopy function', () => {
+  it('returns "Holberton School main dashboard" when it receives false as an argument', () => {
+    const footerCopyIsFalse = 'Holberton School main dashboard';
     expect(getFooterCopy(false)).toBe(footerCopyIsFalse);
   })
 });
