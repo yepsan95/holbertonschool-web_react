@@ -29,7 +29,7 @@
   color: #E7473A;
   background-color: #FFFFFF;
   font-size: 5vmin;
-  font-family: sans-serif;
+  font-family: serif;
 }
 
 .App-body {
@@ -38,12 +38,30 @@
   padding-left: 5vmin;
   padding-top: 5vmin;
   font-size: 2.5vmin;
-  font-family: sans-serif;
+  font-family: serif;
+}
+
+.App-body label {
+}
+
+.App-body input {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.App-body button {
+  background-color: white;
+  width: 40px;
+  height: 25px;
+  font-size: 12px;
+  border-radius: 20%;
+  border-style: solid;
+  border-width: thin;
 }
 
 .App-footer {
-  font-size: calc(5px + 2vmin);
-  font-family: sans-serif;
+  font-size: calc(12px + 2vmin);
+  font-family: serif;
   font-style: italic;
 }
 
