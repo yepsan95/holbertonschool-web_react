@@ -1,6 +1,6 @@
 import React from 'react';
 import './Notifications.css';
-import { getLatestNotification } from './utils.js';
+import { getLatestNotification, closeButton } from './utils.js';
 import closeIcon from './close-icon.png';
 
 function Notifications() {
@@ -22,7 +22,9 @@ function Notifications() {
           top: '0',
           right: '0'
         }}
-        onClick={console.log('Close button has been clicked')}
+        onClick={() => {
+          console.log('Close button han been clicked');
+        }}
         aria-label="Close"
       >
         <img src={closeIcon} alt="close-icon" class="close-icon"/>
