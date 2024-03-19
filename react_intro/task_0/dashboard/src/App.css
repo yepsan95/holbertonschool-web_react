@@ -24,6 +24,7 @@
 .App-header h1 {
   display: block;
   position: relative;
+  height: 15vmin;
   top: 7.5vmin;
   color: #E7473A;
   background-color: #FFFFFF;
