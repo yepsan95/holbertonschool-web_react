@@ -5,7 +5,7 @@ import closeIcon from './close-icon.png';
 
 function Notifications() {
   return (
-    <div class="Notifications"
+    <div className="Notifications"
       style={{
         position: 'relative',
         border: '2px dashed red'
@@ -22,10 +22,12 @@ function Notifications() {
           top: '0',
           right: '0'
         }}
-        onClick={console.log('Close button has been clicked')}
+        onClick={() => {
+          console.log('Close button has been clicked')}
+        }
         aria-label="Close"
       >
-        <img src={closeIcon} alt="close-icon" class="close-icon"/>
+        <img className="close-icon" src={closeIcon} alt="close-icon"/>
       </button>
 	</div>
   );

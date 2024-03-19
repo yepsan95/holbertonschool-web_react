@@ -5,20 +5,20 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 		<h1>School dashboard</h1>
-      </header>
+      </div>
 	  <hr></hr>
-	  <body className="App-body">
+	  <div className="App-body">
 	    <p>Login to access the full dashboard</p>
-	  </body>
+	  </div>
 	  <hr></hr>
-	  <footer className="App-footer">
+	  <div className="App-footer">
 	    <p>
 		  Copyright {getFullYear()} - {getFooterCopy()}
 		</p>
-	  </footer>
+	  </div>
     </div>
   );
 }
