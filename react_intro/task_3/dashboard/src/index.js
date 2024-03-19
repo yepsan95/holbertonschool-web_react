@@ -8,7 +8,7 @@ import Notifications from './Notifications';
 
 ReactDOM.render(
   <React.StrictMode>
-	<div class="root-notifications">
+	<div className="root-notifications">
       <Notifications />
 	</div>
     <App />

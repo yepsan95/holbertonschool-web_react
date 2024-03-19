@@ -1,11 +1,11 @@
 import React from 'react';
 import './Notifications.css';
-import { getLatestNotification, closeButton } from './utils.js';
+import { getLatestNotification } from './utils.js';
 import closeIcon from './close-icon.png';
 
 function Notifications() {
   return (
-    <div class="Notifications"
+    <div className="Notifications"
       style={{
         position: 'relative',
         border: '2px dashed red'
@@ -27,7 +27,7 @@ function Notifications() {
         }}
         aria-label="Close"
       >
-        <img src={closeIcon} alt="close-icon" class="close-icon"/>
+        <img className="close-icon" src={closeIcon} alt="close-icon"/>
       </button>
 	</div>
   );

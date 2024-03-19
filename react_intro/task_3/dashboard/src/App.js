@@ -5,25 +5,25 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 		<h1>School dashboard</h1>
-      </header>
+      </div>
 	  <hr></hr>
-	  <body className="App-body">
+	  <div className="App-body">
 	    <p>Login to access the full dashboard</p>
-		<label for="email">E-mail:</label>
+		<label htmlFor="email">E-mail:</label>
 		<input type="text" id="email-input" name="email"></input>
-		<label for="password">Password:</label>
+		<label htmlFor="password">Password:</label>
 		<input type="text" id="password-input" name="password"></input>
         <button>OK</button>
-	  </body>
+	  </div>
 	  <hr></hr>
-	  <footer className="App-footer">
+	  <div className="App-footer">
 	    <p>
 		  Copyright {getFullYear()} - {getFooterCopy()}
 		</p>
-	  </footer>
+	  </div>
     </div>
   );
 }
