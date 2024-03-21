@@ -3,13 +3,10 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
+  devtool: 'inline-source-map',
   output: {
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  },
-  devServer: {
-    contentBase: './dist',
-    hot: true,
   },
   module: {
     rules: [
@@ -19,9 +16,19 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+          },
+        ],
       },
-    ]
+    ],
   },
-  devtool: 'inline-source-map',
-}
+  devServer: {
+    contentBase: '../dist',
+    compress: true,
+    open: true,
+    hot: true,
+  },
+};
