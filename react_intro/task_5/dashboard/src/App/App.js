@@ -1,5 +1,6 @@
-import { getFullYear, getFooterCopy } from './utils.js';
-import logo from './logo.jpg';
+import React from 'react';
+import { getFullYear, getFooterCopy } from '../utils/utils.js';
+import logo from '../assets/logo.jpg';
 import './App.css';
 
 function App() {

@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
-import App from './App';
+import App from './App/App';
 import reportWebVitals from './reportWebVitals';
-import './Notifications.css';
-import Notifications from './Notifications';
+import Notifications from './Notifications/Notifications';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <div>
 	<div className="root-notifications">
       <Notifications />
 	</div>
     <App />
-  </React.StrictMode>,
+  </div>,
   document.getElementById('root')
 );
 
